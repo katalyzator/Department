@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load staticfiles %}
+
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+
+    <meta charset="UTF-8">
+    <title>Department</title>
+    <link rel="stylesheet" href="{% static 'css/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+
+
+
+
+</head>
+<body>
+
+
+{% include 'navbar.html' %}
+<main>
+    {% block content %}
+
+
+
+    {% endblock %}
+</main>
+{% block footer %}
+    <footer>
+        <div class="grid">
+            <ul class="share">
+                <li class="gmail"><a class="social " href="#"></a></li>
+                <li class="twitter"><a class="social " href="#"></a></li>
+                <li class="facebook"><a class="social " href="#"></a></li>
+            </ul>
+        </div>
+    </footer>
+{% endblock %}
+ <script type="text/javascript" src="{% static 'script/jquery-3.1.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'css/slick/slick.min.js' %}"></script>
+<script src="{% static 'script/js.js' %}"></script>
+
+</body>
+
+</html>

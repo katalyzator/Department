@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<header>
+    <div class="grid">
+        <div class="float group">
+            <div class="logo">
+                <img src="{% static 'images/logo2.png' %}" alt="image">
+
+                <p><span>К</span>олдонмо <span>М</span>атематика жана<br> <span>И</span>нформатика Кафедрасы</p>
+            </div>
+            <div class="contacts">
+                0 (312) <span>44-55-66</span><br>
+                E-MAIL: <span>kmi@gmai.com</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Маалымат</a></li>
+                <li><a href="{% url 'teachers' %}">Кызматкерлер</a></li>
+                <li><a href="{% url 'info' %}">Публикациялар</a></li>
+                <li><a href="#">Байланыш</a></li>
+            </ul>
+        </nav>
+        <div class="line"></div>
+    </div>
+</header>

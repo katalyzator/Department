@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+
+    <div class="grid">
+        <div class="profile group">
+            {% if teachers.teacherimage_set.all %}
+                {% for item in teachers.teacherimage_set.all %}
+                    {% for img in images %}
+                        <img src="/media/{{ MEDIA_URL }}{{ img.image }}" alt="image" class="image">
+                    {% endfor %}
+                {% endfor %}
+            {% endif %}
+            <table>
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">Кызматкер жонундо маалымат</th>
+                    <!--<th scope="col">Кол-во</th>-->
+                    <!--<th scope="col">Цена</th>-->
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <strong class="book-title">Аты </strong>
+                        <!--<span class="text-offset">Стив Круг</span>-->
+                    </td>
+                    <td class="item-stock">{{ teachers.name }}</td>
+                    <!--<td class="item-qty">1</td>-->
+                    <!--<td class="item-price">$30.02</td>-->
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong class="book-title">Э-куржун </strong>
+                        <!--<span class="text-offset">Расс Унгер, Кэролайн Чендлер</span>-->
+                    </td>
+                    <td class="item-stock">{{ teachers.email }}</td>
+                    <!--<td class="item-qty">2</td>-->
+                    <!--<td class="item-price">$52.94 <span class="text-offset item-multiple">$26.47 &#215; 2</span></td>-->
+                </tr>
+                <tr>
+                    <td>
+                        <strong class="book-title"> Кабинет </strong>
+                        <!--<span class="text-offset">Брюс Лоусон, Реми Шарп</span>-->
+                    </td>
+                    <td class="item-stock">{{ teachers.room }}</td>
+                    <!--<td class="item-qty">1</td>-->
+                    <!--<td class="item-price">$22.23</td>-->
+                </tr>
+                <tr>
+                    <td>
+                        <strong class="book-title"> Телефону </strong>
+                        <!--<span class="text-offset">Дэн Сидерхолм</span>-->
+                    </td>
+                    <td class="item-stock">{{ teachers.phone }}</td>
+                    <!--<td class="item-qty">1</td>-->
+                    <!--<td class="item-price">$30.17</td>-->
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr class="text-offset">
+                    <td colspan="1"> Сабактар</td>
+                    <td> {{ teachers.lessons }}
+                    </td>
+                </tr>
+                <!--<tr class="text-offset">-->
+                <!--<td colspan="1">НДС</td>-->
+                <!--<td>$13.54</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td colspan="1">Итого</td>-->
+                <!--<td>$148.90</td>-->
+                <!--</tr>-->
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+{% endblock %}

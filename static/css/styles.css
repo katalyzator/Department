@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'Gotham_ProBold';
+    src: url('../fonts/GothamProBold.eot');
+    src: url('../fonts/GothamProBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamProBold.woff') format('woff'),
+    url('../fonts/GothamProBold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Gotham-ProRegular';
+    src: url('../fonts/GothamProRegular.eot');
+    src: url('../fonts/GothamProRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamProRegular.woff') format('woff'),
+    url('../fonts/GothamProRegular.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Gotham_ProBlack';
+    src: url('../fonts/GothamProBlack.eot');
+    src: url('../fonts/GothamProBlack.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamProBlack.woff') format('woff'),
+    url('../fonts/GothamProBlack.ttf') format('truetype');
+    /*font-weight: bold;*/
+}
+
+@font-face {
+    font-family: 'Bebas_Neueregular';
+    src: url('../fonts/BebasRegular.eot');
+    src: url('../fonts/BebasRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasRegular.woff') format('woff'),
+    url('../fonts/BebasRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas_NeueBold';
+    src: url('../fonts/BebasBold.eot');
+    src: url('../fonts/BebasBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasBold.woff') format('woff'),
+    url('../fonts/BebasBold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Bebas_NeueLight';
+    src: url('../fonts/BebasLight.eot');
+    src: url('../fonts/BebasLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasLight.woff') format('woff'),
+    url('../fonts/BebasLight.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.group::before,
+.group::after {
+    content: "";
+    display: table;
+}
+
+.group::after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+/*header{*/
+    /*background-color: #eeeeee;*/
+/*}*/
+
+.logo{
+    float: left;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.logo p{
+    font-family: "Bebas_NeueBold", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #0d3c44;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0 0 10px;
+}
+
+.logo span{
+    color: #fe0000;
+}
+
+.contacts{
+    font-family: "Bebas_Neueregular", sans-serif;
+    font-size: 20px;
+    color: #0d3c44;
+    letter-spacing: 1px;
+    float: right;
+    margin-top: 20px;
+}
+
+.contacts span{
+    color: #fe0000;
+}
+
+.contacts span:last-child{
+    text-decoration: underline;
+}
+
+nav{
+    font-family: "Gotham_ProBold", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    padding: 10px 15px;
+    color: #0d3c44;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #fe0000;
+}
+
+nav ul li:nth-child(1) a{
+    padding-left: 0;
+}
+
+.line{
+    height: 4px;
+    background-color: #fe0000;
+    margin-top: 10px;
+}
+
+/*main{*/
+    /*background-color: #eeeeee;*/
+    /*border: 1px solid rgba(0,0,0,0);*/
+/*}*/
+
+.slider{
+    width: 1000px;
+    margin: 20px auto 0 auto;
+}
+
+.sl_slide{
+    outline: none;
+}
+
+.sl_slide img{
+    width: 1000px;
+    height: 500px;
+}
+
+.slick-prev, .slick-next{
+    z-index: 1001;
+    width: 32px;
+    height: 32px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+}
+
+.slick-prev{
+    left: 25px;
+
+}
+
+.slick-next{
+    right: 25px;
+}
+
+
+footer{
+    padding: 20px 0;
+    background-color: #eeeeee;
+}
+
+.share{
+    text-align: right;
+    /*margin-top: 42px;*/
+}
+
+.share li{
+    display: inline-block;
+    background: url("../images/social-1.png") no-repeat 2px 0;
+}
+
+.social{
+    display: block;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+
+.twitter{
+    background-position: -55px 0;
+}
+
+.facebook{
+    background-position: -113px 0;
+}
+
+.gmail:hover{
+    background-position: 2px -66px;
+}
+
+.twitter:hover{
+    background-position: -55px -66px;
+}
+
+.facebook:hover{
+    background-position: -113px -66px;
+}
+
+
+/*///////////////////////////////////////////////*/
+/*-----------------Teachers---------------------*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.teachers{
+    margin: 40px 0;
+    padding: 0 100px 0 100px;
+    list-style: none;
+    font-family: "Gotham-ProRegular", sans-serif;
+    font-size: 14px;
+}
+
+.teachers li{
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+}
+
+.teachers a{
+    color: #0d3c44;
+    padding: 10px 0 10px 40px;
+    text-decoration: none;
+}
+
+.teachers a:hover{
+    color: #fe0000;
+}
+
+
+/*////////////////////////////////////////////*/
+/*------------------PROFILE------------------*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.profile{
+    padding: 80px 0;
+}
+
+.image{
+    width: 150px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+table {
+    float: right;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #4a4a4d;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 910px;
+}
+
+
+th,
+td {
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+thead {
+    background: #395870;
+    background: linear-gradient(#49708f, #293f50);
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+th:first-child {
+    border-top-left-radius: 5px;
+    text-align: left;
+}
+th:last-child {
+    border-top-right-radius: 5px;
+}
+tbody tr:nth-child(even) {
+    background: #f0f0f2;
+}
+td {
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid #cecfd5;
+}
+td:first-child {
+    border-left: 1px solid #cecfd5;
+}
+.book-title {
+    color: #395870;
+    display: block;
+}
+.text-offset {
+    color: #7c7c80;
+    font-size: 12px;
+}
+.item-stock,
+.item-qty {
+    text-align: left;
+}
+.item-price {
+    text-align: left;
+}
+.item-multiple {
+    display: block;
+}
+tfoot {
+    text-align: left;
+}
+tfoot tr:last-child {
+    /*background: #f0f0f2;*/
+    color: #395870;
+    font-weight: bold;
+}
+tfoot tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+tfoot tr:last-child td:last-child {
+    font-weight: normal;
+    border-bottom-right-radius: 5px;
+}
+
+
+/*////////////////////////////////////////*/
+/*--------------INFORMATION--------------*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.information{
+    padding: 50px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.information h4{
+    font-family: "Gotham_ProBold", sans-serif;
+    font-size: 20px;
+}
+
+.information p{
+    font-family: "Gotham-ProRegular", sans-serif;
+    font-size: 16px;
+}
+
+.information img{
+    float: left;
+    width: 400px;
+    height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

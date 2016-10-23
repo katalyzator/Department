@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="grid">
+        <ul class="teachers">
+            {% for teach in teachers %}
+                <li><a href="{{ teach.get_absolute_url }}">{{ teach.name }}</a></li>
+            {% endfor %}
+
+        </ul>
+    </div>
+
+{% endblock %}

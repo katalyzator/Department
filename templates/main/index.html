@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+
+{% block content %}
+    <div class="grid">
+        <div class="slider">
+            <div class="sl_slide">
+                <img src="{% static 'images/slide1.jpg' %}" alt="image">
+            </div>
+            <div class="sl_slide">
+                <img src="{% static 'images/slide2.JPG' %}" alt="image">
+            </div>
+            <div class="sl_slide">
+                <img src="{% static 'images/slide3.jpg' %}" alt="image">
+            </div>
+            <!--<div class="sl_slide">-->
+            <!--<img src="assets/images/slide4.jpg" alt="image">-->
+            <!--</div>-->
+        </div>
+    </div>
+{% endblock %}
